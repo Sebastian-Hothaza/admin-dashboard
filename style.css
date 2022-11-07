@@ -1,1 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+    --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+    --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+    --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.profilePic{
+    height: 50px;
+    width: 50px;
+    background-image: var(--avatar1);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: #0000bf;
+}
+
+.sidebar>*{
+    color: #dbdbdb;
+    font-size: 18px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header .top{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.header .bottom{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container{
+    background-color: #dbdbdb;
+}
+
+.content{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 250px;
+    column-gap: 25px;
+    row-gap: 50px;
+}
+
+.content .projects{
+    grid-row: 1 / 3;
+}
+
+.projects, .announcements, .trending{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 2em 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+}
+
+
+.announcementCards , .trendingCards{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2em 1em;
+    height: 180px;
+}
