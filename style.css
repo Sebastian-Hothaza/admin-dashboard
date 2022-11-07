@@ -42,6 +42,30 @@ button{
     border-radius: 50%;
 }
 
+.profilePic2{
+    height: 50px;
+    width: 50px;
+    background-image: var(--avatar2);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profilePic3{
+    height: 50px;
+    width: 50px;
+    background-image: var(--avatar3);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profilePic4{
+    height: 50px;
+    width: 50px;
+    background-image: var(--avatar4);
+    background-size: cover;
+    border-radius: 50%;
+}
+
 .main{
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -56,7 +80,7 @@ button{
     padding: 30px;
     gap: 50px;
 
-    background-color: #0000bf;
+    background-color: #00008c;
     color: #dbdbdb;
     font-size: 20px;
 }
@@ -134,7 +158,7 @@ button{
     display: flex;
     justify-self: end;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .header .buttonPanel{
@@ -202,5 +226,28 @@ button{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2em 1em;
-    height: 180px;
+    
+}
+
+.announcementCards{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.announcementCards>li:nth-child(n+2){
+    border-top: rgb(86, 86, 86) 1px solid;
+    padding-top: 20px;
+}
+
+.trendingCards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.trendingCards>li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
 }
