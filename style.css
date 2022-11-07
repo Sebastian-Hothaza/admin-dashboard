@@ -20,6 +20,11 @@ li{
     list-style: none;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .profilePic{
     height: 50px;
     width: 50px;
@@ -30,18 +35,45 @@ li{
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 280px 1fr;
     height: 100vh;
 }
 
+
+
 .sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 50px;
+
     background-color: #0000bf;
+    color: #dbdbdb;
+    font-size: 20px;
 }
 
-.sidebar>*{
-    color: #dbdbdb;
-    font-size: 18px;
+.sidebar-title{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
 }
+
+.sidebar>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar>ul>li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
 
 .header{
     display: grid;
