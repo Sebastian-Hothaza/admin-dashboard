@@ -25,6 +25,15 @@ a{
     text-decoration: none;
 }
 
+button{
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
 .profilePic{
     height: 50px;
     width: 50px;
@@ -77,18 +86,74 @@ a{
 
 .header{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f7f7f7;
+    gap: 30px;
+    padding: 10px 30px;
 }
 
-.header .top{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.header .search{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
 }
 
-.header .bottom{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.header .search input{
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 20px;
+    width: 400px;
+    font-size: 18px;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
 }
+
+
+.header .greeting{
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    font-size: 18px;
+    
+}
+
+.greetingtxt>div:nth-child(-n+1){
+    font-size: 14px;
+}
+
+.greetingtxt>div:nth-last-child(-n+1){
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.header .userPanel{
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .buttonPanel{
+    display: flex;
+    justify-self: end;
+    gap: 25px;
+}
+
+.buttonPanel button{
+    background-color: orange;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+
+}
+
+
+
 
 .container{
     background-color: #dbdbdb;
